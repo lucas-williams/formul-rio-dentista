@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="icon" href="assets/dent.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Odonto</title>
+</head>
+<body>
+    
+	<div class="container">
+		<section class="area-form">
+			<!-- Início do cabeçalho -->
+			<header>
+				<h1 class="titulo">
+					Nova Odonto
+				</h1>
+				<p class="paragrafo">
+					Obrigado por nos ajudar a melhorar o nosso atendimento e serviços.
+				</p>
+			</header>
+
+			<!-- Início do formulário -->
+			<main class="formulario">
+
+				<form action="">
+
+					<label for="nome" class="titulo-elemento-form">Nome</label>
+					<input type="text" id="nome" name="nome" class="elemento-form margem-inferior margem-superior" placeholder="Digite seu nome" required>
+
+					<label for="sobrenome" class="titulo-elemento-form">Sobrenome</label>
+					<input type="text" id="sobrenome" name="sobrenome" class="elemento-form margem-inferior margem-superior" placeholder="Digite seu sobrenome" required>
+
+					<label for="idade" class="titulo-elemento-form">Idade</label>
+					<input type="number" id="idade" name="idade" class="elemento-form margem-inferior margem-superior" placeholder="Digite sua idade" required>
+
+					<label for="email" class="titulo-elemento-form">E-mail</label>
+					<input type="email" id="email" name="email" class="elemento-form margem-inferior margem-superior" placeholder="Digite seu e-mail" required>
+
+					<!-- Tipo de Função/Trabalho -->
+					<label class="titulo-elemento-form">Qual opção descreve melhor seu trabalho?</label>
+					<select name="trabalho" class="elemento-form margem-inferior margem-superior" required>
+
+						<option value="" id="opcao-placeholder" disabled selected>Selecione uma opção</option>
+						<option value="estudante" class="cor-opcao">Estudante</option>
+						<option value="tempo-integral" class="cor-opcao">Tempo integral</option>
+						<option value="meio-periodo" class="cor-opcao">Meio período</option>
+						<option value="empreendedor" class="cor-opcao">Empreendedor</option>
+						<option value="nao-informado" class="cor-opcao">Prefiro não dizer</option>
+						<option value="outro" class="cor-opcao">Outro</option>
+
+					</select>
+
+					<!-- Seção de Recomendação -->
+					<label class="titulo-elemento-form">Você recomendaria a Nova Odonto  para um amigo?</label>
+					<input type="radio" class="margem-superior" id="recomendacao-comCerteza" name="recomendacao" checked>
+					<label for="recomendacao-comCerteza" class="size-label-check-radio">Com Certeza</label> <br>
+					<input type="radio" id="recomendacao-podeSer" name="recomendacao">
+					<label for="recomendacao-podeSer" class="size-label-check-radio">Pode ser</label> <br>
+					<input type="radio" id="recomendacao-jamais" class="margem-inferior" name="recomendacao">
+					<label for="recomendacao-jamais" class="size-label-check-radio">Jamais recomendaria</label> <br>
+
+					<!-- Tipos de Tratamentos -->
+					<label class="titulo-elemento-form">Quais tratamentos você está precisando neste momento?</label>
+					<input type="checkbox" class="margem-superior" id="restauracao" name="tratamento-1" value="restauracao">
+					<label for="restauracao" class="size-label-check-radio">Restauração</label> <br>
+					<input type="checkbox" id="canal" name="tratamento-2" value="canal">
+					<label for="canal" class="size-label-check-radio">Canal</label> <br>
+					<input type="checkbox" id="clareamento" name="tratamento-3" value="clareamento">
+					<label for="clareamento" class="size-label-check-radio">Clareamento</label> <br>
+					<input type="checkbox" id="aplicacao-fluor" name="tratamento-4" value="aplicacao-fluor">
+					<label for="aplicacao-fluor" class="size-label-check-radio">Aplicação de Flúor</label> <br>
+					<input type="checkbox" id="exodontia" name="tratamento-5" value="exodentia">
+					<label for="exodontia" class="size-label-check-radio">Extração de Dente</label> <br>
+					<input type="checkbox" id="limpeza" name="tratamento-6" value="limpeza">
+					<label for="limpeza" class="size-label-check-radio">Limpeza</label> <br>
+					<input type="checkbox" id="selante" name="tratamento-7" value="selante">
+					<label for="selante" class="size-label-check-radio">Tratamento de Selante</label> <br>
+					<input type="checkbox" id="implante" name="tratamento-8" value="implante">
+					<label for="implante" class="size-label-check-radio">Implante Dentário</label> <br>
+					<input type="checkbox" id="aparelho-ortodontico" name="tratamento-9" value="aparelho-ortodontico">
+					<label for="aparelho-ortodontico" class="size-label-check-radio">Aparelho Ortodôntico</label> <br>
+					<input type="checkbox" id="periodontia" name="tratamento-10" value="periodontia">
+					<label for="periodontia" class="size-label-check-radio">Periodontia</label> <br>
+					<input type="checkbox" id="outros" class="margem-inferior" name="tratamento-11" value="outros">
+					<label for="outros" class="size-label-check-radio">Outros</label>
+
+					<!-- Área de Comentários -->
+					<label for="sugestao" class="titulo-elemento-form">Algum comentário ou sugestão? Conte-nos aqui:</label>
+					<textarea name="sugestao" id="sugestao" class="margem-superior" placeholder="Deixe aqui sua sugestão..."></textarea>
+
+					<input type="submit" class="elemento-form" value="Enviar Formulário">
+
+				</form>
+
+			</main>
+
+			<!-- Início do rodapé -->
+			<footer class="rodape margem-superior">
+				<ul>
+					<li><a href="#"><img src="/assets/instagram.svg" alt=""></a></li>
+					<li><a href="#"><img src="/assets/facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="/assets/twitter.svg" alt=""></a></li>
+				</ul>
+			</footer>
+		</section>
+	</div>
+
+</body>
+</html>

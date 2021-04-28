@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background: url("../assets/image.jpg") center center/cover no-repeat fixed;
+}
+
+/* Formatações do Container */
+.container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 100%;
+    background: #4a94a193;
+}
+
+/* Formatações do Cabeçalho */
+header {
+    padding: 30px;
+}
+
+.titulo {
+    font-size: 2em;
+    font-weight: 400;
+    text-shadow: 0.02em 0.02em rgba(0, 0, 0, 0.600);
+}
+
+.paragrafo {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.3em;
+    text-shadow: 0.03em 0.03em rgba(0, 0, 0, 0.600);
+}
+
+/* Formatações da Área do Formulário  */
+.formulario {
+    text-align: left;
+    max-width: 720px;
+    padding: 45px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #022f42bb;
+}
+
+/* Formatações do Corpo do Formulário  */
+form>label.titulo-elemento-form {
+    display: block;
+    font-size: 1.2em;
+}
+
+.elemento-form {
+   color: rgba(0, 0, 0, 0.800);
+   font-size: 1em;
+   width: 100%;
+   height: 40px;
+   padding: 10px;
+   border-radius: 3px;
+}
+
+.elemento-form:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #4a94a1;
+    box-shadow: 1px 1px 3px #4a94a1, -1px -1px 3px #4a94a1;
+}
+
+/* Formatações das Opções de Trabalho */
+select {
+    background-color: #fff;
+}
+
+#opcao-placeholder {
+    color: rgba(0, 0, 0, 0.600);
+}
+
+select:invalid {
+    color: rgba(0, 0, 0, 0.600);
+}
+
+.cor-opcao {
+    color: rgba(0, 0, 0, 0.750);
+}
+
+/* Formatações da Recomendação/Tratamentos */
+.size-label-check-radio {
+    font-size: 1.2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 5px;
+}
+
+/* Área de Sugestão/Comentário */
+
+textarea {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.900);
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Formatações do Submit */
+input[type="submit"] {
+    color: #fff;
+    font-weight: 600;
+    height: 45px;
+    background-color: #37af65;
+}
+
+input[type="submit"]:hover {
+    background-color: #37af65cb;
+}
+
+.margem-inferior {
+    margin-bottom: 28px;
+}
+
+.margem-superior {
+    margin-top: 7px;
+}
+
+/* Formatações do Rodapé */
+.rodape {
+    padding: 25px;
+    background-color: #121214;
+}
+
+footer.rodape>ul {
+    width: 132px;
+    margin: auto;
+    list-style: none;
+    overflow: auto;
+}
+
+footer.rodape li {
+    float: left;
+    margin: 0px 10px;
+}
+
+footer.rodape a {
+    text-decoration: none;
+}

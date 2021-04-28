@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        max-width: 512px;
+    }
+}
+
+@media screen and (max-width: 526px) {
+
+    .formulario {
+        padding: 25px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .rodape {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 2048px) {
+    body {
+        font-size: 2em;
+    }
+
+    .formulario {
+        max-width: 1080px;
+    }
+
+    .elemento-form {
+        height: 80px;
+        border-radius: 10px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        width: 2em;
+        height: 2em;
+        margin-right: 10px;
+    }
+    
+    .margem-superior {
+        margin-top: 10px;
+    }
+
+    .margem-inferior {
+        margin-bottom: 50px;
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    input[type="submit"] {
+        height: 90px;
+    }
+}
